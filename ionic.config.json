@@ -1,0 +1,7 @@
+{
+  "name": "employee-vault",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
