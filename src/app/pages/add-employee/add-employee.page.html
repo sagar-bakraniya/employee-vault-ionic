@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Add Employee</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form>
+    <div class="ion-text-center">
+      <img width="150" height="150" [src]="'./assets/images/logo.png'" />
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input value="Bakraniya Sagar" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Date of birth</ion-label>
+          <ion-datetime display-format="DD-MM-YYYY"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Age</ion-label>
+          <ion-datetime display-format="DD-MM-YYYY"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label  position="floating">Technologies</ion-label>
+        <ion-input type="text" placeholder="Angular , React , Vue"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Salary</ion-label>
+        <ion-input value="50000.00" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Position</ion-label>
+        <ion-input value="Developer" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Joining Date</ion-label>
+        <ion-datetime display-format="DD-MM-YYYY"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Experience</ion-label>
+        <ion-input value="5 Years" ></ion-input>
+      </ion-item>
+        <ion-item>
+        <ion-label position="floating">Contact</ion-label>
+        <ion-input value="+91 7990712789" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input value="sagarbakraniya5@gmail.com" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Marital Status</ion-label>
+        <ion-input value="Never Married" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fresher</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Has Master Degree</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-button (click)="onClick()" expand="block" >
+      <ion-text  class="ion-text-capitalize" >
+        Add Employee
+      </ion-text>
+    </ion-button>
+  </form>
+</ion-content>

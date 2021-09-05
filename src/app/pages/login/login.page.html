@@ -1,0 +1,28 @@
+<ion-content class="ion-padding">
+  <div class="container">
+    <ion-row>
+      <ion-col class="text-center" size="12">
+        <app-app-logo></app-app-logo>
+      </ion-col>
+    </ion-row>
+    <div class="ion-text-center">
+      Employee Vault
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-icon slot="start" name="at-outline" class="ion-align-self-end"></ion-icon>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="lock-closed-outline" class="ion-align-self-end"></ion-icon>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+        <ion-icon  slot="end" name="eye-outline" class="ion-align-self-end"></ion-icon>
+      </ion-item>
+      <ion-button class="ion-margin-vertical" [routerLink]="['/dashboard']" routerLinkActive="router-link-active"  expand="block">
+        Login
+      </ion-button>
+    </ion-list>
+  </div>
+</ion-content>
